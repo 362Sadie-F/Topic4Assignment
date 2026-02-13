@@ -22,6 +22,7 @@ namespace Topic4Assignment
             double.TryParse(Console.ReadLine(), out price);
             Console.WriteLine(price.ToString("C") + "? Sure hope that's by the hour and not weekly!");
             Console.WriteLine("    ");
+          
             Console.WriteLine("Please enter the following information.");
             Console.Write("First name: ");
             name = Console.ReadLine();
@@ -42,6 +43,7 @@ namespace Topic4Assignment
             Console.WriteLine("Average:\t" + average + "%");
             Console.WriteLine("Grade:\t\t" + grade);
             Console.WriteLine("    ");
+         
             Console.Write("What is your name? ");
             name = Console.ReadLine();
             Console.WriteLine("Hello there, " + name + ", how old are you?");
