@@ -41,6 +41,13 @@ namespace Topic4Assignment
             Console.WriteLine("Name:\t\t" + lastName + ", " + name);
             Console.WriteLine("Average:\t" + average + "%");
             Console.WriteLine("Grade:\t\t" + grade);
+            Console.WriteLine("    ");
+            Console.Write("What is your name? ");
+            name = Console.ReadLine();
+            Console.WriteLine("Hello there, " + name + ", how old are you?");
+            age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("If you are " + age + " now, you will be " + (age + 5) + " in 5 years");
+            Console.WriteLine("In the opposite direction, you were " + (age - 5) + " five years ago.");
         }
     }
 }
