@@ -14,6 +14,10 @@ namespace Topic4Assignment
             int grade;
             int age;
             double price;
+            double num1;
+            double num2;
+            double num3;
+            double num4;
             Console.WriteLine("Hello there! What's your name?");
             name = Console.ReadLine();
             Console.WriteLine("It's a pleasure to meet you, " + name + ", what about your age?");
@@ -22,7 +26,7 @@ namespace Topic4Assignment
             double.TryParse(Console.ReadLine(), out price);
             Console.WriteLine(price.ToString("C") + "? Sure hope that's by the hour and not weekly!");
             Console.WriteLine("   ");
-            Console.WriteLine("\t\t Press SPACEBAR to continue \t ");
+            Console.WriteLine("\t\t Press ENTER to continue \t ");
             Console.ReadLine();
             Console.Clear();
            
@@ -46,7 +50,7 @@ namespace Topic4Assignment
             Console.WriteLine("Average:\t" + average + "%");
             Console.WriteLine("Grade:\t\t" + grade);
             Console.WriteLine("   ");
-            Console.WriteLine("\t\t Press SPACEBAR to continue \t ");
+            Console.WriteLine("\t\t Press ENTER to continue \t ");
             Console.ReadLine();
             Console.Clear();
           
@@ -56,7 +60,16 @@ namespace Topic4Assignment
             age = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("If you are " + age + " now, you will be " + (age + 5) + " in 5 years");
             Console.WriteLine("In the opposite direction, you were " + (age - 5) + " five years ago.");
-            Console.WriteLine();
+            Console.WriteLine("    ");
+            Console.WriteLine("\t\t Press ENTER to continue \t ");
+            Console.ReadLine();
+            Console.Clear();
+
+            Console.WriteLine("Please enter 3 numbers below.");
+            num1 = Convert.ToInt32(Console.ReadLine()); num2 = Convert.ToInt32(Console.ReadLine()); num3 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(num1 + "+" + num2 + "+" + num3 + " = " + (num1 + num2 + num3));
+            num4 = (num1 + num2 + num3);
+            Console.WriteLine("Divide by 2 now and your answer is " + (num4 / 2));
         }
     }
 }
