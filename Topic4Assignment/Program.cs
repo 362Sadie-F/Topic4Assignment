@@ -56,6 +56,7 @@ namespace Topic4Assignment
             age = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("If you are " + age + " now, you will be " + (age + 5) + " in 5 years");
             Console.WriteLine("In the opposite direction, you were " + (age - 5) + " five years ago.");
+            Console.WriteLine();
         }
     }
 }
