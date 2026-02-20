@@ -9,15 +9,22 @@ namespace Topic4Assignment
             string name;
             string lastName;
             string login;
+            string itemOne;
+            string itemTwo;
             int studentID;
-            double average;
             int grade;
             int age;
+            double average;
             double price;
             double num1;
             double num2;
             double num3;
             double num4;
+            double price1;
+            double price2;
+            double discount;
+            double total1;
+
             Console.WriteLine("Hello there! What's your name?");
             name = Console.ReadLine();
             Console.WriteLine("It's a pleasure to meet you, " + name + ", what about your age?");
@@ -70,6 +77,29 @@ namespace Topic4Assignment
             Console.WriteLine(num1 + "+" + num2 + "+" + num3 + " = " + (num1 + num2 + num3));
             num4 = (num1 + num2 + num3);
             Console.WriteLine("Divide by 2 now and your answer is " + (num4 / 2));
+            Console.WriteLine("    ");
+            Console.WriteLine("\t\t Press ENTER to continue \t ");
+            Console.ReadLine();
+            Console.Clear();
+           
+            // name and price of 2 things, total price, discount of 20% subtracted from total, taxes and final price
+            Console.Write("Item one: ");
+            itemOne = Console.ReadLine();
+            Console.Write("Price: $");
+            double.TryParse(Console.ReadLine(), out price1);
+            Console.Write("Item two: ");
+            itemTwo = Console.ReadLine();
+            Console.Write("Price: $");
+            double.TryParse(Console.ReadLine(), out price2);
+            Console.WriteLine("-------------------------------------");
+            Console.WriteLine("Total: " + (price1 + price2));
+            total1 = (price1 + price2);
+            discount = (price1 + price2) / 2;
+            Console.WriteLine("20% Discount: " + (discount));
+            Console.WriteLine("SubTotal: " + (discount + total1));
+            Console.WriteLine("Tax: ");
+            Console.WriteLine("-------------------------------------");
+            Console.WriteLine("Final Total: ");
         }
     }
 }
