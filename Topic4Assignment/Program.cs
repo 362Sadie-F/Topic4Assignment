@@ -94,8 +94,8 @@ namespace Topic4Assignment
             Console.WriteLine("-------------------------------------");
             Console.WriteLine("Total: " + (price1 + price2));
             total1 = (price1 + price2);
-            discount = (price1 + price2) / 2;
-            Console.WriteLine("20% Discount: " + (discount));
+            discount = (total1 / 100) - (20 / 100) * (100);
+            Console.WriteLine("20% Discount: " + (total1 - discount));
             Console.WriteLine("SubTotal: " + (discount + total1));
             Console.WriteLine("Tax: ");
             Console.WriteLine("-------------------------------------");
